@@ -26,7 +26,9 @@
     <div class="btn-container">
       <a class="btn" href="#agradecimiento">Ver Agradecimiento</a>
       <a class="btn" href="#detalles">Ver Detalles</a>
+      <button class="btn-music" onclick="reproducirMusica()"><i class="fas fa-headphones"></i>Escuchar Canción</button>
     </div>
+      <audio id="miCancion" src="cancion.mp4"></audio>
   </div>
 </section>
 
@@ -225,6 +227,15 @@
       alert("Hubo un error al enviar. Por favor intenta de nuevo.");
     });
   });
+  function reproducirMusica() {
+    var audio = document.getElementById("miCancion");
+    
+    if (audio.paused) {
+        audio.play();
+    } else {
+        audio.pause();
+    }
+}
 </script>
 
 </body>
