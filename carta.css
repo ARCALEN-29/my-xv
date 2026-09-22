@@ -264,3 +264,9 @@
     .details-grid { flex-direction: column; gap: 15px; }
     .btn-modern { width: 100%; box-sizing: border-box; }
   }
+  .btn-music{
+    width: 80%; padding: 15px; font-size: 15px; font-weight: 600; color: #ffffff;
+    background: linear-gradient(135deg, #722332 0%, #581824 100%); border: none; border-radius: 50px;
+    cursor: pointer; font-family: inherit; letter-spacing: 1px; box-shadow: 0 4px 15px rgba(88, 24, 36, 0.2);
+    display: flex; align-items: center; justify-content: center; gap: 10px; transition: 0.3s;
+  }
